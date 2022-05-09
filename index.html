@@ -1,32 +1,111 @@
 <!DOCTYPE html>
-<html lang=”pt-br”>
-  <head>
-  
-  <meta charset=”UTF-8”>
-  <title>Portifólio Thais Milena</title>
-  <link rel= stylesheet href= style.css>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-  </head>
-  
-  <body>
-    <style>
-      body {
-      	background: #000;
-        }
-        
-      h1 {
-     	background: #000;
-        font-family:Tangerine;
-        font tipe: bold;
-        font-size: 50px;
-        color: #ffff00;
-        text-align: center;
-        border: 10px solid #000; 
-      }
-    </style> 
-    
-    <h1>Thais Milena</h1>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  </body>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+     	background: #000;
+        font-family:Exo;
+        font tipe: bold;
+        font-size: 25%;
+        color: #ffff00;
+        text-align: left;
+        border: 10px solid #000;
+        text-transform: uppercase;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
+  <link rel= stylesheet href= style.css>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+<header>
+  <h1>Bruno Henrique Catani</h1>
+  <img src="https://i.imgur.com/EuyCqT5.png" alt="header principal">
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
   
+  <article>
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer>
+  <p style="font-size:8px;">Template developed by <a href="https://thaismilenam.github.com/portifolio/">Thais Milena</a>.</p>
+</footer>
+
+</body>
 </html>
