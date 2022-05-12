@@ -11,11 +11,11 @@
 
 
 div.gallery {
-  border: 1px solid #000;
+  border: none;
 }
 
 div.gallery:hover {
-  border: 1px solid #ff3366;
+  border: none;
 }
 
 div.gallery img {
@@ -34,14 +34,14 @@ div.desc {
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1200px) {
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   .responsive {
     width: 100%;
   }
@@ -71,52 +71,20 @@ text-align: left;
 line-height: 1.4em;
 background-color: #141414;
 }
-.menuabout * {
--webkit-box-sizing: border-box;
-box-sizing: border-box;
--webkit-transition: all 0.25s ease;
-transition: all 0.25s ease;
-}
+
 .menuabout img {
 max-width: 100%;
 vertical-align: top;
 opacity: 0.85;
 }
+
 .menuabout figcaption {
 width: 100%;
 background-color: #141414;
 padding: 25px;
 position: relative;
 }
-.menuabout figcaption:before {
-position: absolute;
-content: '';
-bottom: 100%;
-left: 0;
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 55px 0 0 400px;
-border-color: transparent transparent transparent #141414;
-}
-.menuabout figcaption a {
-padding: 5px;
-border: 1px solid #ffffff;
-color: #ffffff;
-font-size: 0.7em;
-text-transform: uppercase;
-margin: 10px 0;
-display: inline-block;
-opacity: 0.65;
-width: 47%;
-text-align: center;
-text-decoration: none;
-font-weight: 600;
-letter-spacing: 1px;
-}
-.snip1336 figcaption a:hover {
-opacity: 1;
-}
+
 .menuabout .profile {
 border-radius: 50%;
 position: absolute;
@@ -127,15 +95,12 @@ max-width: 90px;
 opacity: 1;
 box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.menuabout .follow {
-margin-right: 4%;
-border-color: #2980b9;
-color: #2980b9;
-}
+
 .menuabout h2 {
 margin: 0 0 5px;
 font-weight: 300;
 }
+
 .menuabout h2 span {
 display: block;
 font-size: 0.5em;
@@ -158,7 +123,6 @@ font-size: 15px;
 text-transform: uppercase;
 font-align: center;
 color: #fff;
-text-align: justify-all;
 }
 
 p{
@@ -245,56 +209,39 @@ body {
   <h2>Portifólio</h2>
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_5terre.jpg">
-      <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-  </div>
-</div>
-
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_lights.jpg">
-      <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_forest.jpg">
-      <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-    </a>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="img_mountains.jpg">
-      <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-    </a>
-  </div>
-</div>
-
-<div class="clearfix"></div>
-
 <div class="header">
   <p><br></p>
 </div>
 
-
 <div class="row">
-  <div class="column middle">Column</div>
+  <div class="column middle"></div>
 
+<!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+    </div>
+
+    <div class="w3-third">
+      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
+      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
+      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+    </div>
+    
+    <div class="w3-third">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
+      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
+      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
+    </div>
+  </div>
+  
 <figure class="menuabout">
-  <img src="https://imgur.com/UaeGYn4.png" alt="sample87" />
+  <img src="https://i.imgur.com/BSWuXjy.jpg" alt="header" />
   <figcaption>
-    <img src="https://imgur.com/6PNBAea.png" alt="profile-sample4" class="profile" />
-    <h2><strong>Skills</strong><span>.</span></h2><p>Web designer, fotógrafia, edição de vídeos e engenharia mecânica.</p>
-
+    <img src="https://i.imgur.com/qWZ0BBd.jpg" alt="profile-sample4" class="profile" />
+    <h2><strong>Thais Milena</strong></h2><p>Web designer e fotografia.</p>
     </div>
 </div>
 </div>
@@ -306,5 +253,3 @@ body {
 
 </body>
 </html>
-
-
