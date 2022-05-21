@@ -57,9 +57,7 @@ div.desc {
   box-sizing: border-box;
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 .menuabout {
-font-family: 'Roboto', Arial, sans-serif;
 position: relative;
 overflow: hidden;
 margin: 10px;
@@ -69,18 +67,18 @@ width: 100%;
 color: #ffffff;
 text-align: left;
 line-height: 1.4em;
-background-color: #141414;
+background-color: #000;
 }
 
 .menuabout img {
 max-width: 100%;
 vertical-align: top;
-opacity: 0.85;
+opacity: 0.5;
 }
 
 .menuabout figcaption {
 width: 100%;
-background-color: #141414;
+background-color: #000022;
 padding: 25px;
 position: relative;
 }
@@ -88,17 +86,17 @@ position: relative;
 .menuabout .profile {
 border-radius: 50%;
 position: absolute;
-bottom: 100%;
-left: 25px;
+bottom: 50%;
+left: 140px;
 z-index: 1;
 max-width: 90px;
 opacity: 1;
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+box-shadow: 0 0 15px rgba(0, 0, 1, 1);
 }
 
 .menuabout h2 {
-margin: 0 0 5px;
-font-weight: 300;
+margin: 0 0 15px;
+font-weight: 100;
 }
 
 .menuabout h2 span {
@@ -106,6 +104,7 @@ display: block;
 font-size: 0.5em;
 color: #2980b9;
 }
+
 .menuabout p {
 margin: 0 0 10px;
 font-size: 0.8em;
@@ -131,7 +130,7 @@ font-size: 0.01px;
 
 
 body {
- background-color: #000;
+ background-color: #ff8844;
  overflow-wrap: anywhere;
  font-family: "Vidaloka", serif;
  font-family: "DM Sans", sans serif;
@@ -156,7 +155,6 @@ body {
 /* Create three unequal columns that sits next to each other */
 .column {
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 /* Lateral column */
@@ -188,9 +186,13 @@ body {
 .footer {
   background-color: #000;
   color: #fff;
-  font-size: 12px;
-  padding: 10px;
+  font-size: 15px;
   text-align: center;
+  position: relative;
+  margin: 10px;
+  width: 100%;
+  padding: 25px;
+
 }
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
@@ -219,9 +221,9 @@ body {
 <!-- Photo grid -->
   <div class="w3-row">
     <div class="w3-third">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
-      <img src="/w3images/girl_mountain.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
-      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+      <img src="https://i.imgur.com/FPScOlM.jpg" style="width:100%" onclick="onClick(this)" alt="Leaf">
+      <img src="https://i.imgur.com/2ZvP97Z.jpg" style="width:100%" onclick="onClick(this)" alt="The moon">
+      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The moon.">
     </div>
 
     <div class="w3-third">
@@ -242,14 +244,17 @@ body {
   <figcaption>
     <img src="https://i.imgur.com/qWZ0BBd.jpg" alt="profile-sample4" class="profile" />
     <h2><strong>Thais Milena</strong></h2><p>Web designer e fotografia.</p>
+      
+
     </div>
 </div>
 </div>
 
 
 <div class="footer">
-  <p>Design by Thais Milena.</p>
+  <h2>Design by Thais Milena.</h2>
 </div>
 
 </body>
 </html>
+
