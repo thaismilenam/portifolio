@@ -1,260 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
+
 <head>
 <title>CSS Template Thais Milena</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Vidaloka">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans">
+</head>
 
 <style>
 
-
-div.gallery {
-  border: none;
+:root {
+  --radius: 5px;
+  --padding: 10px;
 }
 
-div.gallery:hover {
-  border: none;
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 0.5rem;
+  height: 100vh;
+  grid-template-areas:
+    "header header header"
+    "content1 content2 content2"
+    "content1 content3 content3"
+    "content4 content5 content6"
+    "footer footer footer";
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 0px;
+#header {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
   text-align: center;
+  background: #c9268d;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-area: header;
 }
 
-.responsive {
-  padding: 0 6px;
-  float: left;
-  width: 24.99999%;
-}
-
-@media only screen and (max-width: 1200px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 1200px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.menuabout {
-position: relative;
-overflow: hidden;
-margin: 10px;
-min-width: 230px;
-max-width: 315px;
-width: 100%;
-color: #ffffff;
-text-align: left;
-line-height: 1.4em;
-background-color: #000;
-}
-
-.menuabout img {
-max-width: 100%;
-vertical-align: top;
-opacity: 0.5;
-}
-
-.menuabout figcaption {
-width: 100%;
-background-color: #000022;
-padding: 25px;
-position: relative;
-}
-
-.menuabout .profile {
-border-radius: 50%;
-position: absolute;
-bottom: 50%;
-left: 140px;
-z-index: 1;
-max-width: 90px;
-opacity: 1;
-box-shadow: 0 0 15px rgba(0, 0, 1, 1);
-}
-
-.menuabout h2 {
-margin: 0 0 15px;
-font-weight: 100;
-}
-
-.menuabout h2 span {
-display: block;
-font-size: 0.5em;
-color: #2980b9;
-}
-
-.menuabout p {
-margin: 0 0 10px;
-font-size: 0.8em;
-letter-spacing: 1px;
-opacity: 0.8;
-}
-
-h1{
-font-size: 30px;
-color: #fff;
-}
-
-h2{
-font-size: 15px;
-text-transform: uppercase;
-font-align: center;
-color: #fff;
-}
-
-p{
-font-size: 0.01px;
-}
-
-
-body {
- background-color: #ff8844;
- overflow-wrap: anywhere;
- font-family: "Vidaloka", serif;
- font-family: "DM Sans", sans serif;
-}
-
-/* Style the header */
-.header {
-  background-color: transparent;
-  color: #fff;
-  padding: 30px;
+#content1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
   text-align: center;
-  font-size: 30px;
+  background: #bf1179;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-area: content1;
 }
 
-
-/* Container for flexboxes */
-.row {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Create three unequal columns that sits next to each other */
-.column {
-  padding: 10px;
-}
-
-/* Lateral column */
-.column.side {
-   -webkit-flex: 1;
-   -ms-flex: 1;
-   flex: 1;
-   background-color: #fff;
-   border: solid;
-   border-radius: 10px;
-   border-color: #fff;
-   text-align: right;
-   font: DM Sans;
-
-}
-
-/* Middle column */
-.column.middle {
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;  
-   color: #fff;
-   border: solid;
-   border-color: #000;
-   text-align: justify-all;
-}
-
-/* Style the footer */
-.footer {
-  background-color: #000;
-  color: #fff;
-  font-size: 15px;
+#content2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
   text-align: center;
-  position: relative;
-  margin: 10px;
-  width: 100%;
-  padding: 25px;
-
+  background: #d81b60;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-area: content2;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
+#content3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  background: #b31077;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-area: content3;
 }
+
+#content4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  background: #c51162;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-area: content4;
+}
+#content5 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  background: #bf1179;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-area: content5;
+}
+
+#content6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  background: #880e4f;
+  border-radius: var(--radius);
+  padding-top: var(--padding);
+  grid-area: content6;
+}
+
+#footer {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  background: #880e4f;
+  border-radius: none;
+  padding-top: 20px;
+  padding-botton: 80%;
+  grid-area: footer;
+}
+
 </style>
-</head>
+
 <body>
 
-<div class="header">
-  <h1>Thais Milena Maciel</h1>
-  <h2>Portifólio</h2>
-</div>
-
-<div class="header">
-  <p><br></p>
-</div>
-
-<div class="row">
-  <div class="column middle"></div>
-
-<!-- Photo grid -->
-  <div class="w3-row">
-    <div class="w3-third">
-      <img src="https://i.imgur.com/FPScOlM.jpg" style="width:100%" onclick="onClick(this)" alt="Leaf">
-      <img src="https://i.imgur.com/2ZvP97Z.jpg" style="width:100%" onclick="onClick(this)" alt="The moon">
-      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="The moon.">
-    </div>
-
-    <div class="w3-third">
-      <img src="/w3images/boy.jpg" style="width:100%" onclick="onClick(this)" alt="Quiet day at the beach. Cold, but beautiful">
-      <img src="/w3images/man_bench.jpg" style="width:100%" onclick="onClick(this)" alt="Waiting for the bus in the desert">
-      <img src="/w3images/natureboy.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
-    </div>
+<div class="container">
+  <div id="header">Thais Milena Maciel</div>
+  
+  <div id="content1">
+  Content 1
+  </div>
     
-    <div class="w3-third">
-      <img src="/w3images/girl.jpg" style="width:100%" onclick="onClick(this)" alt="Canoeing again">
-      <img src="/w3images/girl_train.jpg" style="width:100%" onclick="onClick(this)" alt="A girl, and a train passing">
-      <img src="/w3images/closegirl.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful day!">
-    </div>
+  <div id="content2">
+  Content 2
   </div>
   
-<figure class="menuabout">
-  <img src="https://i.imgur.com/BSWuXjy.jpg" alt="header" />
-  <figcaption>
-    <img src="https://i.imgur.com/qWZ0BBd.jpg" alt="profile-sample4" class="profile" />
-    <h2><strong>Thais Milena</strong></h2><p>Web designer e fotografia.</p>
-      
-
-    </div>
+  <div id="content3">
+	<img src="https://i.imgur.com/FPScOlM.jpg" style="width:100%" onclick="onClick(this)" alt="Leaf">
+    <img src="https://i.imgur.com/2ZvP97Z.jpg" style="width:100%" onclick="onClick(this)" alt="The moon">
+  </div>
+  
+  <div id="content4">
+  Content 4
+  </div>
+  
+  <div id="content5">
+  Content 5
+  </div>
+  
+  <div id="content6">
+  Content 6
+  </div>
+  
+  <div id="footer">
+  Design by Thais Milena<br><br>
+  </div>
+  
 </div>
-</div>
-
-
-<div class="footer">
-  <h2>Design by Thais Milena.</h2>
-</div>
-
 </body>
-</html>
 
+</html>
