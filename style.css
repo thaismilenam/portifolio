@@ -10,10 +10,6 @@ header{
 
 }
 
-nav{
-	opacity: 1;
-}
-
 .perfil{
 	position: absolute;
 	float: left;
@@ -22,6 +18,7 @@ nav{
 	margin-top: 34px;
 	width: 120px;
 	border-radius: 100px;
+	display: inline-block;
 }
 
 .titulo{
@@ -31,6 +28,7 @@ nav{
 	font-style: normal;
 	font-size: 40px;
 	line-height: 40px;
+	display: inline-block;
 }
 
 nav {
@@ -64,6 +62,18 @@ body {
 	align-items: center;
 }
 
+body a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+body a:hover {
+	color: violet;
+	text-decoration: underline;
+}
+
 main {
 	margin: 100px 100px;
 }
@@ -76,18 +86,22 @@ main h2{
 }
 
 .apresentacao{
-	width: 30%;
-	text-align: justify;
-	padding: 2em 0;
+	width: 42%;
+	padding-left: 10%;
+	padding-bottom: 5%;
+	display: inline-block;
+	text-align: center;
 }
 
 .menulinks{
-	width: 45%;
-	display: inline-block;
+	width: 30%;
+	padding-left: 5%;
 	vertical-align: top;
+	padding-bottom: 5%;
+	display: inline-block;
 }
 
-.projetosux{
+.projetos{
 	
 	color: #FFFFFF;
 	padding: 3em 0;
@@ -104,7 +118,7 @@ main h2{
 .cursos{
 	color: #FFFFFF;
 	padding: 3em 0;
-    background: linear-gradient(darkblue, black);
+    background: linear-gradient(rgb(134, 134, 180), rgb(57, 107, 165));
 }
 
 .lista-cursos{
@@ -118,16 +132,22 @@ main h2{
 .aluraimg{
 	padding: 2%;
 	width: 20%;
+	opacity: 0.9;
+	
+}
+
+.aluraimg:hover{
+	opacity: 1;
 }
 
 footer {
 	text-align: center;
-	background: url("bg.jpg");
+	background: #000000;
 	padding: 40px 0;
 }
 
 .copyright {
-	color: #FFFFFF;
+	color: #ffffff;
 	font-size: 13px;
 	margin: 20px 0 0;
 }
