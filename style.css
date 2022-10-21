@@ -1,0 +1,133 @@
+header{
+    width: 100%;
+    height: 215px;
+	padding: 20px 0;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    background: url(header.png);
+	background-size: 100%;
+
+}
+
+nav{
+	opacity: 1;
+}
+
+.perfil{
+	position: absolute;
+	float: left;
+	top: 160px;
+	margin-left: 20px;
+	margin-top: 34px;
+	width: 120px;
+	border-radius: 100px;
+}
+
+.titulo{
+	position: absolute;
+	left: 12.58%;
+	top: 42.7%;
+	font-style: normal;
+	font-size: 40px;
+	line-height: 40px;
+}
+
+nav {
+	position: absolute;
+	top: 200px;
+	right: 100px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: violet;
+	text-decoration: underline;
+}
+
+/*css da página inicial*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+	align-items: center;
+}
+
+main {
+	margin: 100px 100px;
+}
+
+main h2{
+	text-align: center;
+	font-weight: 400;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.apresentacao{
+	width: 30%;
+	text-align: justify;
+	padding: 2em 0;
+}
+
+.menulinks{
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.projetosux{
+	
+	color: #FFFFFF;
+	padding: 3em 0;
+    background: black;
+}
+
+.projetosfront{
+	
+	color: #FFFFFF;
+	padding: 3em 0;
+    background: darkviolet;
+}
+
+.cursos{
+	color: #FFFFFF;
+	padding: 3em 0;
+    background: linear-gradient(darkblue, black);
+}
+
+.lista-cursos{
+	width: 45%;
+	padding-top: 5%;
+	padding-left: 5%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.aluraimg{
+	padding: 2%;
+	width: 20%;
+}
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
